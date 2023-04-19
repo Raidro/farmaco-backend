@@ -9,12 +9,15 @@ datasource db {
 
 
 model HumanMedicine {
-  
+
   id String @id @default(uuid())
   name String
   valid DateTime
   qnt_caixa Int
   qnt_comprimidos Int 
+
+  @@map("HumanMedicines")
+
 
 }
 
@@ -25,5 +28,7 @@ id String @id @default(uuid())
   valid DateTime
   qnt_caixa Int
   qnt_comprimidos Int 
+
+  @@map("AnimalMedicines")
 
 }
