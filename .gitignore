@@ -4,8 +4,11 @@
 
 
 # env
-
 .env
+
+# banco de dados
+dev.db
+dev.db-journal
 
 # Logs
 logs
