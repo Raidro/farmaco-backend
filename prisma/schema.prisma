@@ -8,3 +8,22 @@ datasource db {
 }
 
 
+model HumanMedicine {
+  
+  id String @id @default(uuid())
+  name String
+  valid DateTime
+  qnt_caixa Int
+  qnt_comprimidos Int 
+
+}
+
+model AnimalMedicine {
+
+id String @id @default(uuid())
+  name String
+  valid DateTime
+  qnt_caixa Int
+  qnt_comprimidos Int 
+
+}
